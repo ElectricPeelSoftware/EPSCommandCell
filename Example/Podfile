@@ -1,0 +1,4 @@
+target 'EPSCommandCell', :exclusive => true do
+  pod "EPSCommandCell", :path => "../"
+  pod 'ReactiveCocoa', '~>2.3'
+end
