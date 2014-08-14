@@ -22,4 +22,5 @@ Pod::Spec.new do |s|
   s.source_files = 'Pod/Classes'
 
   s.public_header_files = 'Pod/Classes/**/*.h'
+  s.dependency 'ReactiveCocoa', '~> 2.3'
 end
