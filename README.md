@@ -1,6 +1,14 @@
 # EPSCommandCell
 
-## Usage
+`EPSCommandCell` is a subclass of `UITableViewCell` which has a `command` property:
+
+```objective-c
+@property (nonatomic) RACCommand *command;
+```
+
+When `command` is enabled, the cell’s text color is set to the current tint color (blue by default). When `command` is disabled, the cell’s text is gray.
+
+ ## Usage
 
 Set up the cell with a command:
 
