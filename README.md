@@ -8,7 +8,7 @@
 
 When `command` is enabled, the cell’s text color is set to the current tint color (blue by default). When `command` is disabled, the cell’s text is gray.
 
- ## Usage
+## Usage
 
 Set up the cell with a command:
 
