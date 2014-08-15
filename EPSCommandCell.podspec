@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EPSCommandCell"
-  s.version          = "0.1"
+  s.version          = "0.1.1"
   s.summary          = "A table view cell with a rac_command property."
   s.homepage         = "https://github.com/ElectricPeelSoftware/EPSCommandCell"
   s.license          = 'MIT'

@@ -13,18 +13,7 @@
 		D040D54D199D2C70007D6E74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D040D54C199D2C70007D6E74 /* ViewController.m */; };
 		D040D550199D2C70007D6E74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D040D54E199D2C70007D6E74 /* Main.storyboard */; };
 		D040D552199D2C70007D6E74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D040D551199D2C70007D6E74 /* Images.xcassets */; };
-		D040D55E199D2C70007D6E74 /* EPSCommandCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D040D55D199D2C70007D6E74 /* EPSCommandCellTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D040D558199D2C70007D6E74 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D040D539199D2C70007D6E74 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D040D540199D2C70007D6E74;
-			remoteInfo = EPSCommandCell;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7D9EBBDDE30D4C6B8C3082FC /* Pods-EPSCommandCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPSCommandCell.xcconfig"; path = "Pods/Pods-EPSCommandCell.xcconfig"; sourceTree = "<group>"; };
@@ -38,9 +27,6 @@
 		D040D54C199D2C70007D6E74 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D040D54F199D2C70007D6E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D040D551199D2C70007D6E74 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D040D557199D2C70007D6E74 /* EPSCommandCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPSCommandCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D040D55C199D2C70007D6E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D040D55D199D2C70007D6E74 /* EPSCommandCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPSCommandCellTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,13 +35,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E4928180DC3405BA259BC8A /* libPods-EPSCommandCell.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D040D554199D2C70007D6E74 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				D040D543199D2C70007D6E74 /* EPSCommandCell */,
-				D040D55A199D2C70007D6E74 /* EPSCommandCellTests */,
 				D040D542199D2C70007D6E74 /* Products */,
 				7D9EBBDDE30D4C6B8C3082FC /* Pods-EPSCommandCell.xcconfig */,
 				302BCE03B5B74E868EB5190C /* Frameworks */,
@@ -85,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				D040D541199D2C70007D6E74 /* EPSCommandCell.app */,
-				D040D557199D2C70007D6E74 /* EPSCommandCellTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,23 +90,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D040D55A199D2C70007D6E74 /* EPSCommandCellTests */ = {
-			isa = PBXGroup;
-			children = (
-				D040D55D199D2C70007D6E74 /* EPSCommandCellTests.m */,
-				D040D55B199D2C70007D6E74 /* Supporting Files */,
-			);
-			path = EPSCommandCellTests;
-			sourceTree = "<group>";
-		};
-		D040D55B199D2C70007D6E74 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D040D55C199D2C70007D6E74 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,24 +112,6 @@
 			productReference = D040D541199D2C70007D6E74 /* EPSCommandCell.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D040D556199D2C70007D6E74 /* EPSCommandCellTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D040D564199D2C70007D6E74 /* Build configuration list for PBXNativeTarget "EPSCommandCellTests" */;
-			buildPhases = (
-				D040D553199D2C70007D6E74 /* Sources */,
-				D040D554199D2C70007D6E74 /* Frameworks */,
-				D040D555199D2C70007D6E74 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D040D559199D2C70007D6E74 /* PBXTargetDependency */,
-			);
-			name = EPSCommandCellTests;
-			productName = EPSCommandCellTests;
-			productReference = D040D557199D2C70007D6E74 /* EPSCommandCellTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,10 +123,6 @@
 				TargetAttributes = {
 					D040D540199D2C70007D6E74 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					D040D556199D2C70007D6E74 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = D040D540199D2C70007D6E74;
 					};
 				};
 			};
@@ -202,7 +140,6 @@
 			projectRoot = "";
 			targets = (
 				D040D540199D2C70007D6E74 /* EPSCommandCell */,
-				D040D556199D2C70007D6E74 /* EPSCommandCellTests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,13 +151,6 @@
 			files = (
 				D040D550199D2C70007D6E74 /* Main.storyboard in Resources */,
 				D040D552199D2C70007D6E74 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D040D555199D2C70007D6E74 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,23 +200,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D040D553199D2C70007D6E74 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D040D55E199D2C70007D6E74 /* EPSCommandCellTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D040D559199D2C70007D6E74 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D040D540199D2C70007D6E74 /* EPSCommandCell */;
-			targetProxy = D040D558199D2C70007D6E74 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D040D54E199D2C70007D6E74 /* Main.storyboard */ = {
@@ -334,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -369,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -383,6 +297,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = EPSCommandCell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -395,42 +310,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = EPSCommandCell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		D040D565199D2C70007D6E74 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = EPSCommandCellTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EPSCommandCell.app/EPSCommandCell";
-			};
-			name = Debug;
-		};
-		D040D566199D2C70007D6E74 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = EPSCommandCellTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EPSCommandCell.app/EPSCommandCell";
 			};
 			name = Release;
 		};
@@ -451,15 +333,6 @@
 			buildConfigurations = (
 				D040D562199D2C70007D6E74 /* Debug */,
 				D040D563199D2C70007D6E74 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D040D564199D2C70007D6E74 /* Build configuration list for PBXNativeTarget "EPSCommandCellTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D040D565199D2C70007D6E74 /* Debug */,
-				D040D566199D2C70007D6E74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

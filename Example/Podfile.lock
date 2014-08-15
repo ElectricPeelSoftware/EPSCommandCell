@@ -1,5 +1,6 @@
 PODS:
-  - EPSCommandCell (0.1)
+  - EPSCommandCell (0.1):
+    - ReactiveCocoa (~> 2.3)
   - ReactiveCocoa (2.3.1):
     - ReactiveCocoa/UI
   - ReactiveCocoa/Core (2.3.1):
@@ -17,7 +18,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  EPSCommandCell: 4653ab1e2fd1e0becbfb30b2436641b229bc5785
+  EPSCommandCell: 5b87fa6cb382809898a9061f63f11f5c2c88e62c
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
 
 COCOAPODS: 0.33.1
