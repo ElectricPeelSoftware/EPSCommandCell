@@ -8,6 +8,8 @@
 
 #import "EPSCommandCell.h"
 
+#import <ReactiveCocoa/RACEXTScope.h>
+
 @implementation EPSCommandCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -35,10 +37,22 @@
         }]
         switchToLatest];
     
-    RAC(self.textLabel, textColor) = [RACObserve(self, canExecuteCommand) map:^UIColor *(NSNumber *enabled) {
-        if (enabled.boolValue) return self.tintColor;
-        else return [UIColor grayColor];
-    }];
+    @weakify(self);
+    
+    RACSignal *tintSignal = [[[self rac_signalForSelector:@selector(tintColorDidChange)] startWith:nil]
+        map:^UIColor *(id value) {
+            @strongify(self);
+
+            return self.tintColor;
+        }];
+    
+    RAC(self.textLabel, textColor) = [RACSignal
+        combineLatest:@[ RACObserve(self, canExecuteCommand), tintSignal ]
+        reduce:^UIColor *(NSNumber *canExecute, UIColor *tintColor){
+            if (canExecute.boolValue) return tintColor;
+            else return [UIColor grayColor];
+        }];
+
 }
 
 @end
